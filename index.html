@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>QR Code Display</title>
+   <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         background-color: rgba(173, 216, 230, 0.692);
+         /* background: linear-gradient(135deg, #1f1f1f, #020202); */
+         font-family: 'Arial', sans-serif;
+         color: white;
+      }
+      #outer {
+         width: 350px;
+         height: 480px;
+         background-color: #ffffff;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+         border-radius: 20px;
+         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+         padding: 20px;
+         text-align: center;
+      }
+      #inner {
+         width: 350px;
+         height: 300px;
+         background-color: #f7f7f7;
+         border-radius: 10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+         margin-bottom: 20px;
+         background-color: hsl(195, 75%, 41%);
+      }
+      #Image {
+         width: 350px;
+         height: 300px;
+         border-radius: 10px;
+         /* padding: 20px; */
+      }
+      .h1 {
+         color: #1a1a1a;
+         font-size: 1.7rem;
+         font-weight: bold;
+         margin: 0 0 15px;
+      }
+      p {
+         color: #555;
+         font-size: 0.9rem;
+         line-height: 1.6;
+         margin: 0;
+      }
+      p span {
+         color: #1a73e8;
+         font-weight: bold;
+         cursor: pointer;
+         text-decoration: underline;
+      }
+   </style>
+</head>
+<body>
+   <div id="outer">
+      <div id="inner">
+         <img id="Image" src="../images/image-qr-code.png" alt="QR code">
+      </div>
+      <h1 class="h1">Improve Your Front-End <br> Skills by buliding  Projects</h1>
+      <p>Scan the QR code to visit <span>Frontend <br>Mentor</span> and take your coding skills <br> to the next level!</p>
+   </div>
+</body>
+</html>
